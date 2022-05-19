@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<title>Фильмы</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="page">
+      <header class="header">
+  <div class="header__container _container">
+    <div class="header__contact">
+      <a href="tel:+77002871565">
+        <span class="fa fa-phone"></span>
+        +7 700 287 1565
+      </a>
+    </div>
+    <div class="header__body">
+      <div class="header__logo">
+        <a href="" class="header__logo"><img src="../img/logo.svg" alt="" /></a>
+      </div>
+      <div class="menu__icon icon-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__menu menu">
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li>
+              <a href="index.html" id="home" class="menu__link _active"
+                >Главная</a
+              >
+            </li>
+            <li>
+              <a href="movies.html" id="movies" class="menu__link">Фильмы</a>
+            </li>
+            <li>
+              <a href="news.html" id="news" class="menu__link">Новости</a>
+            </li>
+            <li><a href="#" id="about" class="menu__link">О нас</a></li>
+            <li>
+              <a href="contact.html" id="contact" class="menu__link"
+                >Контакты</a
+              >
+            </li>
+            <li>
+              <a href="booking.html" id="booking" class="menu__link"
+                >Бронирование</a
+              >
+            </li>
+          </ul>
+          <ul class="menu__social">
+            <li>
+              <a href=""><span class="fa fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href=""><span class="fa fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href=""><span class="fa fa-instagram"></span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="page-top">
+          <div class="page-top__container _container">
+              <div class="page-top__text">ВЗГЛЯНИ НА ЭТО</div>
+              <h1 class="page-top__title">Что будет на этой неделе</h1>
+          </div>
+      </div>
+      <div class="all-movies">
+        <div class="all-movies__container _container">
+          <div class="all-movies__search">
+            <input type="text" placeholder="Название фильма">
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="all-movies__tabs movies-tabs">
+            <nav class="movies-tabs__items">
+              <button class="movies-tabs__item _active" data-tab="#tab1">ПН</button>
+              <button class="movies-tabs__item" data-tab="#tab2">ВТ</button>
+              <button class="movies-tabs__item" data-tab="#tab3">СР</button>
+              <button class="movies-tabs__item" data-tab="#tab4">ЧТ</button>
+              <button class="movies-tabs__item" data-tab="#tab5">ПТ</button>
+              <button class="movies-tabs__item" data-tab="#tab6">СБ</button>
+              <button class="movies-tabs__item" data-tab="#tab7">Сегодня</button>
+            </nav>
+            <div class="movies-tabs__body">
+              <div class="movies-tabs__block _active" id="tab1">
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_1.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">ТРИЛЛЕР, УЖАС, ПРИКЛЮЧЕНИЯ</div>
+                    <div class="movie-element__name">Мортал Комбат</div>
+                    <div class="movie-element__description">Зрелищный боевик о семейных ценностях и зове крови, основанный на одной из самых популярных компьютерных игр. Главный герой — боец-неудачник Коул Янг — узнает, что принадлежит к племени избранных, роду бойцов</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">10:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                    <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_2.webp" alt=""></a>
+                    <div class="movie-element__info">
+                      <div class="movie-element__genre">детектив, криминал, драма, боевик</div>
+                      <div class="movie-element__name">Бэтмен</div>
+                      <div class="movie-element__description">После двух лет поисков правосудия на улицах Готэма Бэтмен становится для горожан олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на высокопоставленных чиновников, улики приводят Брюса Уэйна в самые тёмные закоулки преступного мира</div>
+                      <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                      <div class="movie-element__bottom">
+                        <div class="movie-element__schedule">
+                          <div class="movie-element__title">СЕАНСЫ</div>
+                          <div class="movie-element__times">
+                            <div class="movie-element__time">10:00 am</div>
+                            <div class="movie-element__time">12:00 am</div>
+                            <div class="movie-element__time">14:00 am</div>
+                          </div>
+                        </div>
+                        <div class="movie-element__duration">
+                          <div class="movie-element__title">110 минут</div>
+                          <div class="movie-element__icon">18</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="movies-tabs__element movie-element">
+                    <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.jpg" alt=""></a>
+                    <div class="movie-element__info">
+                      <div class="movie-element__genre">фантастика, фэнтези, боевик, приключения</div>
+                      <div class="movie-element__name">Аквамен</div>
+                      <div class="movie-element__description">Действие фильма разворачивается в необъятном и захватывающем подводном мире семи морей, а сюжет знакомит зрителей с историей происхождения получеловека-полуатланта Артура Карри и ключевыми событиями его жизни – теми, что заставят его не только столкнуться с самим собой</div>
+                      <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                      <div class="movie-element__bottom">
+                        <div class="movie-element__schedule">
+                          <div class="movie-element__title">СЕАНСЫ</div>
+                          <div class="movie-element__times">
+                            <div class="movie-element__time">20:00 am</div>
+                            <div class="movie-element__time">22:00 am</div>
+                          </div>
+                        </div>
+                        <div class="movie-element__duration">
+                          <div class="movie-element__title">150 минут</div>
+                          <div class="movie-element__icon">18</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="movies-tabs__element movie-element">
+                    <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.webp" alt=""></a>
+                    <div class="movie-element__info">
+                      <div class="movie-element__genre">
+                        фантастика, боевик, драма, приключения</div>
+                      <div class="movie-element__name">Дюна</div>
+                      <div class="movie-element__description">Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. </div>
+                      <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                      <div class="movie-element__bottom">
+                        <div class="movie-element__schedule">
+                          <div class="movie-element__title">СЕАНСЫ</div>
+                          <div class="movie-element__time">21:00 am</div>
+                        </div>
+                        <div class="movie-element__duration">
+                          <div class="movie-element__title">110 минут</div>
+                          <div class="movie-element__icon">18</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="movies-tabs__block" id="tab2">
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_2.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">детектив, криминал, драма, боевик</div>
+                    <div class="movie-element__name">Бэтмен</div>
+                    <div class="movie-element__description">После двух лет поисков правосудия на улицах Готэма Бэтмен становится для горожан олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на высокопоставленных чиновников, улики приводят Брюса Уэйна в самые тёмные закоулки преступного мира</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">10:00 am</div>
+                          <div class="movie-element__time">12:00 am</div>
+                          <div class="movie-element__time">14:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_1.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">ТРИЛЛЕР, УЖАС, ПРИКЛЮЧЕНИЯ</div>
+                    <div class="movie-element__name">Мортал Комбат</div>
+                    <div class="movie-element__description">Зрелищный боевик о семейных ценностях и зове крови, основанный на одной из самых популярных компьютерных игр. Главный герой — боец-неудачник Коул Янг — узнает, что принадлежит к племени избранных, роду бойцов</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">10:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="movies-tabs__element movie-element">
+                    <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.jpg" alt=""></a>
+                    <div class="movie-element__info">
+                      <div class="movie-element__genre">фантастика, фэнтези, боевик, приключения</div>
+                      <div class="movie-element__name">Аквамен</div>
+                      <div class="movie-element__description">Действие фильма разворачивается в необъятном и захватывающем подводном мире семи морей, а сюжет знакомит зрителей с историей происхождения получеловека-полуатланта Артура Карри и ключевыми событиями его жизни – теми, что заставят его не только столкнуться с самим собой</div>
+                      <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                      <div class="movie-element__bottom">
+                        <div class="movie-element__schedule">
+                          <div class="movie-element__title">СЕАНСЫ</div>
+                          <div class="movie-element__times">
+                            <div class="movie-element__time">20:00 am</div>
+                            <div class="movie-element__time">22:00 am</div>
+                          </div>
+                        </div>
+                        <div class="movie-element__duration">
+                          <div class="movie-element__title">150 минут</div>
+                          <div class="movie-element__icon">18</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="movies-tabs__element movie-element">
+                    <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.webp" alt=""></a>
+                    <div class="movie-element__info">
+                      <div class="movie-element__genre">
+                        фантастика, боевик, драма, приключения</div>
+                      <div class="movie-element__name">Дюна</div>
+                      <div class="movie-element__description">Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. </div>
+                      <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                      <div class="movie-element__bottom">
+                        <div class="movie-element__schedule">
+                          <div class="movie-element__title">СЕАНСЫ</div>
+                          <div class="movie-element__time">21:00 am</div>
+                        </div>
+                        <div class="movie-element__duration">
+                          <div class="movie-element__title">110 минут</div>
+                          <div class="movie-element__icon">18</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="movies-tabs__block" id="tab3">
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">фантастика, фэнтези, боевик, приключения</div>
+                    <div class="movie-element__name">Аквамен</div>
+                    <div class="movie-element__description">Действие фильма разворачивается в необъятном и захватывающем подводном мире семи морей, а сюжет знакомит зрителей с историей происхождения получеловека-полуатланта Артура Карри и ключевыми событиями его жизни – теми, что заставят его не только столкнуться с самим собой</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">20:00 am</div>
+                          <div class="movie-element__time">22:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">150 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_2.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">детектив, криминал, драма, боевик</div>
+                    <div class="movie-element__name">Бэтмен</div>
+                    <div class="movie-element__description">После двух лет поисков правосудия на улицах Готэма Бэтмен становится для горожан олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на высокопоставленных чиновников, улики приводят Брюса Уэйна в самые тёмные закоулки преступного мира</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">10:00 am</div>
+                          <div class="movie-element__time">12:00 am</div>
+                          <div class="movie-element__time">14:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_1.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">ТРИЛЛЕР, УЖАС, ПРИКЛЮЧЕНИЯ</div>
+                    <div class="movie-element__name">Мортал Комбат</div>
+                    <div class="movie-element__description">Зрелищный боевик о семейных ценностях и зове крови, основанный на одной из самых популярных компьютерных игр. Главный герой — боец-неудачник Коул Янг — узнает, что принадлежит к племени избранных, роду бойцов</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">10:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                  <div class="movies-tabs__element movie-element">
+                    <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.webp" alt=""></a>
+                    <div class="movie-element__info">
+                      <div class="movie-element__genre">
+                        фантастика, боевик, драма, приключения</div>
+                      <div class="movie-element__name">Дюна</div>
+                      <div class="movie-element__description">Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. </div>
+                      <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                      <div class="movie-element__bottom">
+                        <div class="movie-element__schedule">
+                          <div class="movie-element__title">СЕАНСЫ</div>
+                          <div class="movie-element__time">21:00 am</div>
+                        </div>
+                        <div class="movie-element__duration">
+                          <div class="movie-element__title">110 минут</div>
+                          <div class="movie-element__icon">18</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="movies-tabs__block" id="tab4">
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">фантастика, фэнтези, боевик, приключения</div>
+                    <div class="movie-element__name">Аквамен</div>
+                    <div class="movie-element__description">Действие фильма разворачивается в необъятном и захватывающем подводном мире семи морей, а сюжет знакомит зрителей с историей происхождения получеловека-полуатланта Артура Карри и ключевыми событиями его жизни – теми, что заставят его не только столкнуться с самим собой</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">20:00 am</div>
+                          <div class="movie-element__time">22:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">150 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_2.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">детектив, криминал, драма, боевик</div>
+                    <div class="movie-element__name">Бэтмен</div>
+                    <div class="movie-element__description">После двух лет поисков правосудия на улицах Готэма Бэтмен становится для горожан олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на высокопоставленных чиновников, улики приводят Брюса Уэйна в самые тёмные закоулки преступного мира</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">10:00 am</div>
+                          <div class="movie-element__time">12:00 am</div>
+                          <div class="movie-element__time">14:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_1.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">ТРИЛЛЕР, УЖАС, ПРИКЛЮЧЕНИЯ</div>
+                    <div class="movie-element__name">Мортал Комбат</div>
+                    <div class="movie-element__description">Зрелищный боевик о семейных ценностях и зове крови, основанный на одной из самых популярных компьютерных игр. Главный герой — боец-неудачник Коул Янг — узнает, что принадлежит к племени избранных, роду бойцов</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">10:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                  <div class="movies-tabs__element movie-element">
+                    <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.webp" alt=""></a>
+                    <div class="movie-element__info">
+                      <div class="movie-element__genre">
+                        фантастика, боевик, драма, приключения</div>
+                      <div class="movie-element__name">Дюна</div>
+                      <div class="movie-element__description">Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. </div>
+                      <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                      <div class="movie-element__bottom">
+                        <div class="movie-element__schedule">
+                          <div class="movie-element__title">СЕАНСЫ</div>
+                          <div class="movie-element__time">21:00 am</div>
+                        </div>
+                        <div class="movie-element__duration">
+                          <div class="movie-element__title">110 минут</div>
+                          <div class="movie-element__icon">18</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="movies-tabs__block" id="tab5">
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">
+                      фантастика, боевик, драма, приключения</div>
+                    <div class="movie-element__name">Дюна</div>
+                    <div class="movie-element__description">Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. </div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">21:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">фантастика, фэнтези, боевик, приключения</div>
+                    <div class="movie-element__name">Аквамен</div>
+                    <div class="movie-element__description">Действие фильма разворачивается в необъятном и захватывающем подводном мире семи морей, а сюжет знакомит зрителей с историей происхождения получеловека-полуатланта Артура Карри и ключевыми событиями его жизни – теми, что заставят его не только столкнуться с самим собой</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">20:00 am</div>
+                          <div class="movie-element__time">22:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">150 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_2.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">детектив, криминал, драма, боевик</div>
+                    <div class="movie-element__name">Бэтмен</div>
+                    <div class="movie-element__description">После двух лет поисков правосудия на улицах Готэма Бэтмен становится для горожан олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на высокопоставленных чиновников, улики приводят Брюса Уэйна в самые тёмные закоулки преступного мира</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">10:00 am</div>
+                          <div class="movie-element__time">12:00 am</div>
+                          <div class="movie-element__time">14:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_1.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">ТРИЛЛЕР, УЖАС, ПРИКЛЮЧЕНИЯ</div>
+                    <div class="movie-element__name">Мортал Комбат</div>
+                    <div class="movie-element__description">Зрелищный боевик о семейных ценностях и зове крови, основанный на одной из самых популярных компьютерных игр. Главный герой — боец-неудачник Коул Янг — узнает, что принадлежит к племени избранных, роду бойцов</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">10:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="movies-tabs__block" id="tab6">
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">
+                      фантастика, боевик, драма, приключения</div>
+                    <div class="movie-element__name">Дюна</div>
+                    <div class="movie-element__description">Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. </div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">21:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">фантастика, фэнтези, боевик, приключения</div>
+                    <div class="movie-element__name">Аквамен</div>
+                    <div class="movie-element__description">Действие фильма разворачивается в необъятном и захватывающем подводном мире семи морей, а сюжет знакомит зрителей с историей происхождения получеловека-полуатланта Артура Карри и ключевыми событиями его жизни – теми, что заставят его не только столкнуться с самим собой</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">20:00 am</div>
+                          <div class="movie-element__time">22:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">150 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_2.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">детектив, криминал, драма, боевик</div>
+                    <div class="movie-element__name">Бэтмен</div>
+                    <div class="movie-element__description">После двух лет поисков правосудия на улицах Готэма Бэтмен становится для горожан олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на высокопоставленных чиновников, улики приводят Брюса Уэйна в самые тёмные закоулки преступного мира</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">10:00 am</div>
+                          <div class="movie-element__time">12:00 am</div>
+                          <div class="movie-element__time">14:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_1.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">ТРИЛЛЕР, УЖАС, ПРИКЛЮЧЕНИЯ</div>
+                    <div class="movie-element__name">Мортал Комбат</div>
+                    <div class="movie-element__description">Зрелищный боевик о семейных ценностях и зове крови, основанный на одной из самых популярных компьютерных игр. Главный герой — боец-неудачник Коул Янг — узнает, что принадлежит к племени избранных, роду бойцов</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">10:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="movies-tabs__block" id="tab7">
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_2.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">детектив, криминал, драма, боевик</div>
+                    <div class="movie-element__name">Бэтмен</div>
+                    <div class="movie-element__description">После двух лет поисков правосудия на улицах Готэма Бэтмен становится для горожан олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на высокопоставленных чиновников, улики приводят Брюса Уэйна в самые тёмные закоулки преступного мира</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">10:00 am</div>
+                          <div class="movie-element__time">12:00 am</div>
+                          <div class="movie-element__time">14:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.webp" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">
+                      фантастика, боевик, драма, приключения</div>
+                    <div class="movie-element__name">Дюна</div>
+                    <div class="movie-element__description">Наследник знаменитого дома Атрейдесов Пол отправляется вместе с семьей на одну из самых опасных планет во Вселенной — Арракис. Здесь нет ничего, кроме песка, палящего солнца, гигантских чудовищ и основной причины межгалактических конфликтов — невероятно ценного ресурса, который называется меланж. </div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">21:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_3.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">фантастика, фэнтези, боевик, приключения</div>
+                    <div class="movie-element__name">Аквамен</div>
+                    <div class="movie-element__description">Действие фильма разворачивается в необъятном и захватывающем подводном мире семи морей, а сюжет знакомит зрителей с историей происхождения получеловека-полуатланта Артура Карри и ключевыми событиями его жизни – теми, что заставят его не только столкнуться с самим собой</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__times">
+                          <div class="movie-element__time">20:00 am</div>
+                          <div class="movie-element__time">22:00 am</div>
+                        </div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">150 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="movies-tabs__element movie-element">
+                  <a href="" class="movie-element__image _ibg"><img src="./img/posters/poster_1.jpg" alt=""></a>
+                  <div class="movie-element__info">
+                    <div class="movie-element__genre">ТРИЛЛЕР, УЖАС, ПРИКЛЮЧЕНИЯ</div>
+                    <div class="movie-element__name">Мортал Комбат</div>
+                    <div class="movie-element__description">Зрелищный боевик о семейных ценностях и зове крови, основанный на одной из самых популярных компьютерных игр. Главный герой — боец-неудачник Коул Янг — узнает, что принадлежит к племени избранных, роду бойцов</div>
+                    <a href="" class="movie-element__more">ПОДРОБНОЕ ОПИСАНИЕ</a>
+                    <div class="movie-element__bottom">
+                      <div class="movie-element__schedule">
+                        <div class="movie-element__title">СЕАНСЫ</div>
+                        <div class="movie-element__time">10:00 am</div>
+                      </div>
+                      <div class="movie-element__duration">
+                        <div class="movie-element__title">110 минут</div>
+                        <div class="movie-element__icon">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-us">
+        <h2 class="contact-us__text">Нужна помощь? Свяжитесь с нашей службой поддержкиn</h2>
+        <h1 class="contact-us__phone">+7 700 287 1565</h1>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+  <div class="footer__container _container">
+    <div class="footer__body">
+      <div class="footer__column">
+        <div class="footer__title">СВЯЗАТЬСЯ</div>
+        <ul class="footer__list">
+          <li><a href="index.html" class="footer__link">Главная</a></li>
+          <li><a href="movies.html" class="footer__link">Фильмы</a></li>
+          <li><a href="news.html" class="footer__link">Новости</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <div class="footer__title">О НАШЕЙ ОРГАНИЗАЦИИ</div>
+        <ul class="footer__list">
+          <li><a href="contact.html" class="footer__link">О Нас</a></li>
+          <li><a href="contact.html" class="footer__link">FAQs</a></li>
+          <li>
+            <a href="contact.html" class="footer__link">Связаться с нами</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <div class="footer__title">ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ</div>
+        <ul class="footer__list">
+          <li><a href="contact.html" class="footer__link">FAQs</a></li>
+          <li>
+            <a href="contact.html" class="footer__link"
+              >Дайте нам обратную связь</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="footer__link">Связаться с нами</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <div class="footer__title">Связаться с нами</div>
+        <ul class="footer__list">
+          <li>
+            <a href="" class="footer__link"
+              ><span class="fa fa-facebook-f"></span>Facebook</a
+            >
+          </li>
+          <li>
+            <a href="" class="footer__link"
+              ><span class="fa fa-twitter"></span>Twitter</a
+            >
+          </li>
+          <li>
+            <a href="" class="footer__link"
+              ><span class="fa fa-instagram"></span>Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+  <script src="https://kit.fontawesome.com/68898b3846.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>

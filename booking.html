@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Booking</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<style>
+.booking-button{
+  border: 1px solid #ec7532;
+  background: #ec7532;
+        transition: all 0.3s ease 0s;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        color: #fff;
+}
+</style>
+</head>
+
+<body class="bg-light">
+
+<div class="container">
+<div class="py-5 text-center">
+        <h2>Booking</h2>
+      </div>
+<fieldset>
+  
+  <form name="frmContact" class="needs-validation " method="post" action="contact.php">
+    <p>
+      <label for="Name">Your Name </label>
+      <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Name" value="" required>
+	  <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+    </p>
+    <p>
+      <label for="email">Your Email</label>
+      <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="" required>
+    </p>
+    <p>
+      <label for="phone">Your Phone</label>
+      <input type="text"  class="form-control" name="txtPhone" id="txtPhone" placeholder="Phone" value="" required>
+    </p>
+    <p>
+      <label for="message">Movie</label>
+      <input type="text"  class="form-control" name="txtMovie" id="txtMovie" placeholder="Movie" value="" required>
+    </p>
+    <p>
+      <label for="message">Time</label>
+      <input type="text" class="form-control" name="txtTime" id="txtTime" placeholder="Time" value="" required>
+    </p>
+    <p>
+      <label for="message">Hall</label>
+      <input type="number" class="form-control" name="txtHall" id="txtHall" placeholder="1" value="" required>
+    </p>
+    <p>
+      <label for="message">Row</label>
+      <input type="number" class="form-control" name="txtRow" id="txtRow" placeholder="1" value="" required>
+    </p>
+    <p>
+      <label for="message">Place</label>
+      <input type="number" class="form-control" name="txtPlace" id="txtPlace" placeholder="1" value="" required>
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Click me to Contact"  class="booking-button">
+    </p>
+  </form>
+</fieldset>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
